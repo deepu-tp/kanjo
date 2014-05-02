@@ -1,0 +1,206 @@
+{
+  "WA": {
+    "Division": "D9", 
+    "Region": "Pacific"
+  }, 
+  "DE": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "DC": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "WI": {
+    "Division": "D3", 
+    "Region": "Midwest"
+  }, 
+  "WV": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "FL": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "WY": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "NH": {
+    "Division": "D1", 
+    "Region": "Northeast"
+  }, 
+  "NJ": {
+    "Division": "D2", 
+    "Region": "Northeast"
+  }, 
+  "NM": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "TX": {
+    "Division": "D7", 
+    "Region": "South"
+  }, 
+  "LA": {
+    "Division": "D7", 
+    "Region": "South"
+  }, 
+  "NC": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "ND": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }, 
+  "NE": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }, 
+  "TN": {
+    "Division": "D6", 
+    "Region": "South"
+  }, 
+  "NY": {
+    "Division": "D2", 
+    "Region": "Northeast"
+  }, 
+  "PA": {
+    "Division": "D2", 
+    "Region": "Northeast"
+  }, 
+  "RI": {
+    "Division": "D1", 
+    "Region": "Northeast"
+  }, 
+  "NV": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "VA": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "CO": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "AK": {
+    "Division": "D9", 
+    "Region": "Pacific"
+  }, 
+  "AL": {
+    "Division": "D6", 
+    "Region": "South"
+  }, 
+  "HW": {
+    "Division": "D9", 
+    "Region": "Pacific"
+  }, 
+  "AR": {
+    "Division": "D7", 
+    "Region": "South"
+  }, 
+  "VT": {
+    "Division": "D1", 
+    "Region": "Northeast"
+  }, 
+  "IL": {
+    "Division": "D3", 
+    "Region": "Midwest"
+  }, 
+  "GA": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "IN": {
+    "Division": "D3", 
+    "Region": "Midwest"
+  }, 
+  "IA": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }, 
+  "OK": {
+    "Division": "D7", 
+    "Region": "South"
+  }, 
+  "AZ": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "CA": {
+    "Division": "D9", 
+    "Region": "Pacific"
+  }, 
+  "ID": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "CT": {
+    "Division": "D1", 
+    "Region": "Northeast"
+  }, 
+  "ME": {
+    "Division": "D1", 
+    "Region": "Northeast"
+  }, 
+  "MD": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "MA": {
+    "Division": "D1", 
+    "Region": "Northeast"
+  }, 
+  "OH": {
+    "Division": "D3", 
+    "Region": "Midwest"
+  }, 
+  "UT": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "MO": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }, 
+  "MN": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }, 
+  "MI": {
+    "Division": "D3", 
+    "Region": "Midwest"
+  }, 
+  "KS": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }, 
+  "MT": {
+    "Division": "D8", 
+    "Region": "Mountain"
+  }, 
+  "MS": {
+    "Division": "D6", 
+    "Region": "South"
+  }, 
+  "SC": {
+    "Division": "D5", 
+    "Region": "South"
+  }, 
+  "KY": {
+    "Division": "D6", 
+    "Region": "South"
+  }, 
+  "OR": {
+    "Division": "D9", 
+    "Region": "Pacific"
+  }, 
+  "SD": {
+    "Division": "D4", 
+    "Region": "Midwest"
+  }
+}

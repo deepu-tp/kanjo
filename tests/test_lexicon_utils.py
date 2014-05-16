@@ -19,3 +19,19 @@ class TestLexiconsUtils(unittest.TestCase):
         polarity = lexicon_utils.hashtag_polarity(
                         'What a #swell day. It was #flawless')
         assert_equal(polarity, 'Positive')
+
+    def test_afinn_polarity(self):
+        polarity = lexicon_utils.afinn_polarity(
+                        'what a wonderful day It was flawless')
+        assert_equal(polarity, 'Positive')
+
+    def test_is_english(self):
+        is_english = lexicon_utils.is_english("I hope this is in english")
+        assert_equal(is_english, True)
+
+        is_english = lexicon_utils.is_english(("oi muito bem vinda ao meu "
+                                               "twitter sempre dou followback"
+                                               " pelo meu perfil profissional"
+                                               "permaneca por aqui certo"
+                                               " abrass"))
+        assert_equal(is_english, False)

@@ -46,3 +46,10 @@ class TestLexicons(unittest.TestCase):
         index = lexicons.Slangs_index
         query = index.query("I'll fix you l8r. g2g")
         assert_equal(query, [('l8r', 'later'), ('g2g', 'got to go')])
+
+    def test_english_words(self):
+        assert_equal(type(lexicons.english_words), list)
+
+    def test_english_lkp(self):
+        lkp = lexicons.english_words_lkp
+        assert_equal('is' in lkp, True)

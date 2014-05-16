@@ -127,5 +127,25 @@ class Lexicons(Resource):
             self._cached[name] = index
             return index
 
+    @property
+    def english_words(self):
+        path = 'lexicons/words.txt'
+        package = __name__
+        return self.lazy_load(self._load_tsv, package, path)
+
+    @property
+    def english_words_lkp(self):
+        name = 'english_words_lkp'
+        try:
+            return self._cached[name]
+        except KeyError:
+            data = self.english_words
+            lkp = set([])
+            for word in data:
+                lkp.add(word[0].strip().lower())
+
+            self._cached[name] = lkp
+            return lkp
+
 geo = Geo()
 lexicons = Lexicons()

@@ -1,0 +1,70 @@
+trainer : kanjo.training.neutral_classifier_trainer:train
+
+output_dir : data/neutral_classifier
+
+model :
+    name : neutral_classifier
+    version : 0.1
+
+settings :
+
+    stanford_corenlp_url : http://localhost:8080
+
+    sentiment140_appid : <appid>
+
+    n_estimators : 30
+
+    grid_search :
+        args:
+            - criterion: [gini, entropy]
+              min_samples_split: [50, 100, 150, 200]
+              max_depth: [3, 5, 7, 9, 11, 13, 15]
+
+        kwargs :
+            n_jobs : -1
+            verbose : 1
+
+
+    cross_validation :
+        kwargs :  
+            n_iter : 30
+            test_size : 0.1
+
+
+    training_data :
+        path : data/sanders_corpus.csv
+
+        extract_features : True
+        text_field : TweetText
+
+        features : [
+            afinn_polarity_score,
+            stanford_corenlp_polarity_score,
+            sentiment140_polarity_score
+        ]
+
+        label : Neutral_score
+
+        preprocess : True
+
+        preprocessing : 
+
+            - name : kanjo.training.utils:unbias_row_values
+              args :
+                - Sentiment
+
+            - name : kanjo.training.utils:transform_col_values
+              args :
+                - Sentiment : Neutral_score
+                - neutral : 1
+                  positive : 0
+                  negative : 0
+                  irrelevant : 1
+
+            - name : kanjo.training.utils:remove_newline
+              args :
+                - [TweetText]
+
+            - name : kanjo.training.utils:remove_non_english
+              args :
+                - TweetText

@@ -56,6 +56,9 @@ def preprocess_tweet_text(text):
     #Convert to lower case
     text = text.lower()
 
+    # Replace newline characters with space
+    text = text.replace('\n', ' ')
+
     # Try to replace 
     text = text.encode('translit/long').encode('ascii', 'ignore')
 

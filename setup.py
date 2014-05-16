@@ -12,7 +12,7 @@ config = {
     'version': '0.1',
     'install_requires': ['nose'],
     'packages': ['kanjo'],
-    'scripts': [],
+    'scripts': ['bin/kanjo_train'],
     'name': 'kanjo'
 }
 

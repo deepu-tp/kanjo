@@ -36,9 +36,9 @@ class Sentiment140:
         return result['polarity']
 
 
-    def bulk_classify(self, tweets, verbose=False):
+    def bulk_classify(self, data, verbose=False):
 
-        results = self.api.bulk_classify_json(tweets)
+        results = self.api.bulk_classify_json(data)
         for result in results:
             result['polarity_score'] = result['polarity']
             result['polarity'] = self._get_polarity_name(result['polarity'])
